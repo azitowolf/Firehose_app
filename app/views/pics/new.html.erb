@@ -1,15 +1,17 @@
 <div class="boxy span6 offset3 text-center">
 
-	<h2> Upload Your Image </h2>
+	<h2> Input Your Info </h2>
 
 <%= simple_form_for @pic do |f| %>
 
 	<%= f.input :lesson, label: 'What Lesson Did You Finish' %>
-</br>
+<br/>
 	<%= f.input :emotion, label: 'Tell Me How You Felt', placeholder: 'Feeling Stoked' %>
-</br>
+<br/>
 	<%= f.input :learned, label: 'What Did You Learn?', placeholder: 'I learned how to download bootstrapped ruby gems, bro!' %>
-</br>
+<br/>
+	<%= f.input :image, label: 'Upload Image', as: :file %>
+<br/>
 
 <%= submit_tag 'Save', :class => 'btn btn-warning btn-large' %>
 
